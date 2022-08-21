@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+  --color-bg-sedans: hsl(31, 77%, 52%);
+  --color-bg-suvs: hsl(184, 100%, 22%);
+  --color-bg-luxury: hsl(179, 100%, 13%);
+  --color-text: hsla(0, 0%, 100%, 0.75);
+  --color-light: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 1.5rem;
+  margin: 0;
+  font-size: 15px;
+  background-color: var(--color-light);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-card {
+  background-color: #aaa;
+  padding: 3rem;
+}
+
+.preview-title {
+  color: var(--color-light);
+  font-family: 'Big Shoulders Display';
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.preview-description {
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.btn-white {
+  background-color: var(--color-light);
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #aaa;
+}
+
+#sedans-card {
+  background-color: var(--color-bg-sedans);
+}
+#sedans-card .btn-white {
+  color: var(--color-bg-sedans);
+}
+
+#suvs-card {
+  background-color: var(--color-bg-suvs);
+}
+#suvs-card .btn-white {
+  color: var(--color-bg-suvs);
+}
+
+#luxury-card {
+  background-color: var(--color-bg-luxury);
+}
+#luxury-card .btn-white {
+  color: var(--color-bg-luxury);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    align-items: center;
+  }
+  .preview-container {
+    flex-direction: row;
+    max-width: 60rem;
+    margin: auto;
+  }
+  .preview-description {
+    margin-bottom: 5rem;
+  }
+}
