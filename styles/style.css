@@ -59,8 +59,16 @@ p {
   border-radius: 2rem;
   text-decoration: none;
   color: #aaa;
+  border: 2px solid white;
+  transition: all 0.4s;
 }
 
+#suvs-card .btn-white:hover,
+#sedans-card .btn-white:hover,
+#luxury-card .btn-white:hover {
+  color: white;
+  background-color: transparent;
+}
 #sedans-card {
   background-color: var(--color-bg-sedans);
 }
